@@ -1,3 +1,4 @@
+/* https://github.com/quro4ka */
 /* font-family: 'Kaushan Script', cursive; */
 
 *,
@@ -338,8 +339,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Statistics */
+
+.statistics {
+    background-color: #95e1d3;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat__item {
+    flex: 1 1 0;
+
+    text-align: center;
+    border-left: 1px solid #b5eae0;
+    color: #fff;
+
+    padding: 70px 25px;
+}
+
+.stat__item:last-child {
+    border-right: 1px solid #b5eae0;
+}
 
 
+.stat__count {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 
 
