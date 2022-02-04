@@ -300,45 +300,42 @@ hr {
     background-color: #f8f8f8;
 }
 
-/* About */
+/* Card */
 
-.about {
+.card {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
 }
 
-.about__item {
+.card__item {
     width: 380px;
-    background-color: #95e1d3;
-
-    position: relative;
 }
 
-.about__item:hover .about__img{
+.card__item:hover .card__img{
     transform: translate3d(-10px, -10px, 0);
     
 }
 
-.about__item:hover .about__img img{
+.card__item:hover .card__img img{
     opacity: .1;
 }
 
-.about__item:hover .about__text {
+.card__item:hover .card__text {
     opacity: 1;
 }
 
-.about__img {
+.card__img {
     background: linear-gradient(to bottom, #f38181, #fce38a);
     transition:  transform .2s linear;
 }
 
-.about__img img {
+.card__img img {
     display: block;
     transition: opacity .1s linear;
 }
 
-.about__text {
+.card__text {
     width: 100%;
     font-size: 18px;
     color: #fff;
@@ -356,6 +353,28 @@ hr {
     transition: opacity .2s linear;
 }
 
+.card__inner {
+    position: relative;
+    background-color: #95e1d3;
+}
+
+.card__info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card__name {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card__prof {
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
+}
 
 /* Statistics */
 
@@ -614,3 +633,47 @@ hr {
     right: 0;
     transform: rotate(135deg);
 }
+
+
+/* Social */
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    width: 55px;
+    height: 55px;
+    padding: 10px 15px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+    text-decoration: none;
+    color: #f38181;
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    transition: color .3s linear, background-color .3s linear;
+}
+
+.social__item:hover {
+    background-color: #f38181;
+    color: #fff; 
+}
+
+.social__item:last-child {
+    border-right: 0;
+}
+
+
+/* Logos */
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
